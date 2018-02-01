@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/style.css';
 import Column from './components/Column';
 
 class App extends Component {
@@ -59,17 +59,17 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <button onClick={this.clearCache}>Clear</button>
+      <div className="kanban-board">
+        <button className="clear-button" onClick={this.clearCache}>Clear</button>
         <div className="App">
           {this.state.columns.map((column, i) => {
             return (
-              <Column 
+              <Column
                 key={i}
                 data={this.state.columns[i]}
                 columnIndex={i}
                 shiftTask={this.shiftTask}
-                addTask={this.addTask} 
+                addTask={this.addTask}
               />
             );
           })}

@@ -1,0 +1,82 @@
+/************************************************
+MAIN
+************************************************/
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #26547C;
+  font-family: "Merriweather";
+  font-size: 16px; }
+
+*:focus {
+  outline: none; }
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; }
+
+.hide {
+  display: none; }
+
+.kanban-board {
+  width: 100%; }
+
+/************************************************
+COLUMN
+************************************************/
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.275);
+  border-radius: 5%;
+  margin: 0 2rem;
+  padding: 1rem;
+  width: 22.5%;
+  height: 60%;
+  background-color: #FFFCF9;
+  box-shadow: 1px 1px 1px black; }
+  .column ul {
+    list-style: none;
+    align-self: center;
+    padding: 0;
+    width: 95%; }
+    .column ul li {
+      align-self: center;
+      margin: .5rem;
+      width: 100%;
+      font-family: "Montserrat"; }
+
+form {
+  width: 100%; }
+
+input {
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+  width: 100%;
+  height: 1.5rem;
+  background-color: #FFFCF9; }
+
+.task-list {
+  display: flex;
+  flex-direction: column; }
+  .task-list button {
+    margin: 0 .75rem; }
+
+.clear-button {
+  font-family: "Montserrat";
+  margin: 1rem;
+  width: 3rem;
+  height: 2rem;
+  background-color: #FFD166;
+  border: none;
+  border-radius: 5%; }
